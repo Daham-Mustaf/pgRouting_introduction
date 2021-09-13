@@ -3,9 +3,6 @@
 1. [pgRouting Introduction](#introduction)
 - [Installation](#install)
 - [pgRouting Installing in the database](#ex)
-- [`ogrinfo`: ](#datasource)
-- [`--help` getting help: ](#help)
-- [`--long-usage` full help:](#fullhelp)
 
 
 ## pgRouting Introduction <a name="introduction"></a>
