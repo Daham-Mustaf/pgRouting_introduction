@@ -4,12 +4,13 @@
 - [Installation](#install)
 - [pgRouting Installing in the database](#ex)
 - [Upgrading the database:](#up)
+2. [Step One](#one)
 
 
 ## pgRouting Introduction <a name="introduction"></a>
 pgRouting is a PostGIS extension that brings routing tools to the table. pgRouting offers an extensive set of algorithms to choose from, can solve traveling salesman problems, calculate drive time zones, and even obey turn restrictions and avoid one-way streets.
 With such a toolbox, one can create some pretty serious routing services that can be consumed, for example, by web applications.
-## Installing the pgRouting extension<a name="install"></a>
+### Installing the pgRouting extension<a name="install"></a>
 pgRouting can be installed via ports:
 ```bash
 cd /usr/ports/databases/pgRouting
@@ -34,7 +35,7 @@ cd pgrouting
 git checkout v3.1.3
 ```
 
-## Installing the pgRouting extension<a name="ex"></a>
+### Installing the pgRouting extension<a name="ex"></a>
 Many distributions of PostGIS are equipped with pgRouting already. Execute the following SQL to check whether you have pgRouting onboard:
 ```j
    select pgr_version();
@@ -51,9 +52,27 @@ psql routing -c 'CREATE EXTENSION pgRouting'
    ```
    At this stage, we should be ready to continue with pgRouting.
    
-   ## Upgrading the database: <a name="up"></a>
-   ```j
+ ### Upgrading the database: <a name="up"></a>
+   Upgrading:
+  ```j 
    ALTER EXTENSION pgrouting UPDATE TO "2.2.3";
-    ```
-  
+  ```
+    
+## Step One:<a name="one"></a>
+
+Requirments 
+1- PostgresSql
+2- Postgis
+3- Pgrouting
+ ```j
+ SELECT PostGIS_Version();
+			postgis_version
+     ```
+   ```shel   
+postgres -V >postgresVersion.txt
+psql -V
+
+cd pgrouting
+git checkout v3.1.3
+  ```
 
