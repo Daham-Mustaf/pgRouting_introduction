@@ -4,6 +4,7 @@
 - [Installation](#install)
 - [pgRouting Installing in the database](#ex)
 - [Upgrading the database:](#up)
+2.[Step One](#one)
 
 
 ## pgRouting Introduction <a name="introduction"></a>
@@ -55,5 +56,19 @@ psql routing -c 'CREATE EXTENSION pgRouting'
    ```j
    ALTER EXTENSION pgrouting UPDATE TO "2.2.3";
     ```
-  
+    
+## Step One: <a name="one"></a>
+Requirments 
+1- PostgresSql
+2- Postgis
+3- Pgrouting
+
+ ```j
+ SELECT PostGIS_Version();
+			postgis_version
+     ```
+   ```shel   
+postgres -V >postgresVersion.txt
+psql -V
+  ```
 
