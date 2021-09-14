@@ -1,0 +1,4 @@
+postGis=# SELECT PostGIS_Version();
+            postgis_version            
+---------------------------------------
+ 3.1 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
