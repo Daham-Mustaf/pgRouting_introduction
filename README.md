@@ -3,7 +3,7 @@
 1. [pgRouting Introduction](#introduction)
 - [Installation](#install)
 - [pgRouting Installing in the database](#ex)
-- [Upgrading the database:]((#up)
+- [Upgrading the database:](#up)
 
 
 ## pgRouting Introduction <a name="introduction"></a>
@@ -52,5 +52,8 @@ psql routing -c 'CREATE EXTENSION pgRouting'
    At this stage, we should be ready to continue with pgRouting.
    
    ## Upgrading the database: <a name="up"></a>
+   ```j
+   ALTER EXTENSION pgrouting UPDATE TO "2.2.3";
+    ```
   
 
