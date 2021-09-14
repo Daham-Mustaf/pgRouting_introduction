@@ -1,10 +1,10 @@
 # pgRouting_introduction
 # Table of contents
-1.[pgRouting Introduction](#introduction)
+1. [pgRouting Introduction](#introduction)
 - [Installation](#install)
 - [pgRouting Installing in the database](#ex)
 - [Upgrading the database:](#up)
-2.[Step One](#one)
+2. [Step One](#one)
 
 
 ## pgRouting Introduction <a name="introduction"></a>
@@ -58,7 +58,7 @@ psql routing -c 'CREATE EXTENSION pgRouting'
    ALTER EXTENSION pgrouting UPDATE TO "2.2.3";
   ```
     
-## Step One: <a name="one"></a>
+## Step One:<a name="one"></a>
 
 Requirments 
 1- PostgresSql
