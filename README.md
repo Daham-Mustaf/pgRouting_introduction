@@ -66,7 +66,7 @@ Requirments
 3- Pgrouting
  ```j
  SELECT PostGIS_Version();
-			postgis_version
+			
      ```
    ```shel   
 postgres -V >postgresVersion.txt
